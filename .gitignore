@@ -1,7 +1,6 @@
 # Local .terraform directories
 #**/terraform/.terraform/*
-**/home/wr/projects/LinuxAdmin-LINUXtips/terraform/.terraform/*
-
+/terraform/.terraform/providers/registry.terraform.io/oracle/oci/5.47.0/linux_amd64/terraform-provider-oci_v5.47.0
 # .tfstate files
 *.tfstate
 *.tfstate.*

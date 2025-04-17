@@ -1,7 +1,7 @@
 # LinuxAdmin-LINUXtips
 Repositório para arquivos do treinamento Linux Admin da Linuxtips
 
-## Day 0 
+## Dia 0 
 
 - Termos e condições
 - Suporte ao estudante 

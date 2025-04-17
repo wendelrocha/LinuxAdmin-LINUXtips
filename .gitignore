@@ -22,6 +22,7 @@ override.tf.json
 
 # Lock do Terraform
 *.terraform.tfstate.lock.info
+*.terraform.lock.hcl
 
 # Planos de execução
 *.tfplan

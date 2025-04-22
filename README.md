@@ -1,7 +1,7 @@
 # LinuxAdmin-LINUXtips
 Repositório para anotações e arquivos do treinamento Linux Admin da Linuxtips.
 
-[Link] (https://github.com/wendelrocha/LinuxAdmin-LINUXtips/blob/main/Day00.md)
+### [Day 0](https://github.com/wendelrocha/LinuxAdmin-LINUXtips/blob/main/Day00.md)
 
 ## Day 1
 

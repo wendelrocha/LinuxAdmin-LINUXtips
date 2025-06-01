@@ -222,7 +222,7 @@ Os comandos são internos (built-in) são mais rápidos do que os externos (impo
 
     which ls
     man builtins
-    type
+    type cd
 > Como identificar os comandos internos
 
     apt-get -y install man-db
@@ -233,8 +233,8 @@ Primeiro o Kernel busca os internos, caso não encontre chama os externos. Tudo 
 
 **Comandos de manipulação de diretórios**
 
-ls
-cd
-pwd
-mkdir
-rmdir
+    ls
+    cd
+    pwd
+    mkdir
+    rmdir

@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-
+# Configures the Oracle Cloud Infrastructure provider for authentication and interaction with OCI resources.
 provider "oci" {
   tenancy_ocid     = var.tenancy_ocid
   user_ocid        = var.user_ocid

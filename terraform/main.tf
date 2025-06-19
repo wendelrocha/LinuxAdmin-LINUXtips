@@ -75,7 +75,9 @@ resource "oci_core_instance" "instance" {
   compartment_id      = var.compartment_ocid
   shape               = "VM.Standard.E2.1.Micro"
   display_name        = "lab-vm-Ubuntu"
-  subnet_id           = oci_core_subnet.subnet.id
+  create_vnic_details {
+    subnet_id = oci_core_subnet.subnet.id
+  }
   source_details {
     source_type = "image"
         source_id = data.oci_core_images.ubuntu_x86.images[0].id

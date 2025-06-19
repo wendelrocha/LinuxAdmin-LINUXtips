@@ -1,0 +1,21 @@
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "generic/debian12"
+  config.vm.box_version = "4.3.12"
+  config.vm.hostname = "linuxtips"
+  config.vm.network "private_network", ip: "192.168.56.200"
+  # Adiciona um disco de 20 GB
+  config.vm.disk :disk, size: "20GB", name: "extra_storage" 
+
+  # Define recursos mínimos  
+  config.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+      vb.cpus = "2"      
+  end   
+  
+  config.vm.provision "shell", inline: <<-SHELL
+    # Atualiza pacotes e instala pacotes essenciais para o curso. 
+    apt-get update -y
+    apt-get install -y coreutils bsdutils bsdmainutils net-tools vim curl
+  SHELL
+end

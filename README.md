@@ -86,11 +86,6 @@ Utilizar máquina virtual no VirtualBox ou recurso computacional em nuvem.
 ```bash
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 ```
-
-```bash
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-```
-
 *Add o repositório de atualização dos pacotes*
 Se for Ubuntu, substituir 'buster' pela release do Ubuntu (trusty) 
 
@@ -197,47 +192,58 @@ Significados dos diretórios (extraido de https://pt.wikipedia.org/wiki/Filesyst
 
 **Desligando e reinicinado o Linux**
 
+*Desligar a máquina*
+
     halt 
     init0
     poweroff
     shutdown -h 18:00 (programa para desligar às 18h) 
     shutdown -h now
-> Desliga a máquina 
+*Reiniciar a máquina* 
 
     reboot
     init 6
     shutdown -r +30 (programa para reiniciar em 30 minutos)
     shutdown -r +30 "será reiniciada em 30 minutos" - manda msg para quem estiver conectado
     shutdown -r now
-> Reinicia a máquina
-    
+
+*Cancelar o desligamento ou o reboot*
+
     shutdown -c (cancela o agendamento)  
     shutdown -c "não será mais reiniciada" - manda msg para quem estiver conectado
-> Cancelar o desligamento ou o reboot
 
 **Comandos Internos e Comandos Externos**
 
 Comandos internos estão embutidos no próprio Shell, ao contrário dos comandos externos.
 Os comandos são internos (built-in) são mais rápidos do que os externos (importantes em shell scripts)
 
+*Como identificar os comandos internos*
+
     which ls
     man builtins
     type cd
-> Como identificar os comandos internos
+
+*Instala o man, caso não existe no sistema operacional*
 
     apt-get -y install man-db
-> Instala o man, caso não existe no sistema operacional  
+  
+Existem comandos que são internos e externos. Primeiro o Kernel busca os internos, caso não encontre chama os externos. 
+Tudo isso baseado na variável de ambiente $PATH
 
-Existem comandos que são internos e externos. 
-Primeiro o Kernel busca os internos, caso não encontre chama os externos. Tudo isso baseado na variável de ambiente $PATH
+**Comandos de manipulação de arquivos e diretórios**
 
-**Comandos de manipulação de diretórios**
+*Comandos mais utilizados para manipulação de arquivos e diretórios*
 
     ls
     cd
     pwd
     mkdir
     rmdir
+    touch
+    rm
+    cp
+    mv
+    
 #######################################
 Limites em sistemas de particionamento e sistemas de arquivos
 

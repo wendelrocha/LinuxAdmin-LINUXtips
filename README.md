@@ -269,3 +269,5 @@ Detalhes sobre o cálculo de blocos e como atingir valores máximos, podem ser e
   https://pt.wikipedia.org/wiki/Ext4
   
   https://pt.wikipedia.org/wiki/Ext3
+## Permissões
+
